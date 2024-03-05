@@ -9,4 +9,4 @@
 
 
 ## Tareas del equipo:
-[Aquí]()
+[Aquí](https://github.com/iKinoo/AdAstra-diseno/tree/main/Tareas)
