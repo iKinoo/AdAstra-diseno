@@ -56,9 +56,8 @@ Contextualizado al proyecto, los RNF vistos como atributos de calidad son:
 | RNF.2 | Requerimiento de confiabilidad | |
 | RNF.2.1 | Persistencia del Progreso | El progreso del usuario será persistente entre dispositivos. |
 | RNF.2.2 | Disponibilidad de Contenido | El contenido de los cursos y actividades siempre estarán disponibles para su consulta. |
-| RNF.3 | Requerimiento de fiabilidad | |
-| RNF.3.1 | Disponibilidad del Sistema | El sistema estará mayormente disponible durante las horas de mayor actividad o eventos de alto tráfico. Se espera que el tiempo de inactividad del sistema se mantenga dentro de límites aceptables, lo que resultará en una espera razonable por parte de los usuarios. |
-| RNF.3.2 | Reconocimiento del Progreso | El sistema debe ser capaz de reconocer el progreso del usuario en la mayoría de las ocasiones. Se espera que las fallas en el reconocimiento del progreso sean extremadamente raras y se deben evitar en la medida de lo posible. |
+| RNF.2.3 | Disponibilidad del Sistema | El sistema estará mayormente disponible durante las horas de mayor actividad o eventos de alto tráfico. Se espera que el tiempo de inactividad del sistema se mantenga dentro de límites aceptables, lo que resultará en una espera razonable por parte de los usuarios. |
+| RNF.2.4 | Reconocimiento del Progreso | El sistema debe ser capaz de reconocer el progreso del usuario en la mayoría de las ocasiones. Se espera que las fallas en el reconocimiento del progreso sean extremadamente raras y se deben evitar en la medida de lo posible. |
 | RNF.4 | Flexibilidad | |
 | RNF.4.1 | Adición de Cursos y Actividades | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
 | RNF.4.2 | Comunicación entre Módulos | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. |
