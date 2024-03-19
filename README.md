@@ -70,7 +70,7 @@ Generar un reporte con los detalles más relevantes de los puntos anteriores.
 
 
 * [RNF.1 Requerimientos de usabilidad]() (Russel) (pueden revisar mi ejemplo)
-* [RNF 2. Requerimiento de confiabilidad]() (Rodrigo)
+* [RNF 2. Requerimiento de Confiabilidad](Tareas/InvestigacionRNF/Confiabilidad) (Rodrigo)
 * [RNF 3. Requerimiento de Fiabilidad]() (Isaías)
 * [RNF. 4 Requerimiento de Flexibilidad]() (Mateo)
 * [RNF. 4 Requerimiento de Escalabilidad]() (Mateo)
