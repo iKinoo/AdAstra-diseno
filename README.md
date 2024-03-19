@@ -22,11 +22,22 @@
 1.- Cada **atributo se definirá de manera formal** de acuerdo al modelo de calidad o alguna definición de una fuente confiable. Es importante documentar el **propósito del modelo de calidad** y la fuente de información:
 
 
-Usamos el ... como referencia
+Usamos el ISO 25010 como referencia,un ISO o estándar para la evaluacion de la calidad del producto software.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://iso25000.com/images/figures/iso_25010.png)
 
-sin embargo también tomamos las definiciones de..., partiendo de eso tenemos que de los RNF que elegimos las definiciones con las que trabajaremos son:
+sin embargo también tomamos en cuenta las definiciones del ISO 9126 para apoyarnos, partiendo de eso tenemos que de los RNF que elegimos las definiciones con las que trabajaremos son:
+
+* **RNF1 Usabilidad/Capacidad de interacción**: 
+Mide el grado en que el software es fácil de usar, qué tan intuitivo es, el manejo que el usuario le da al sistema y si este presenta menús sencillos, lectura de textos ágil, cuenta con funciones de forma clara y puntual, entre otros. 
+
+* RNF2:
+
+* RNF3:
+
+* RNF4:
+
+
 Definiciones específicas
 
 
