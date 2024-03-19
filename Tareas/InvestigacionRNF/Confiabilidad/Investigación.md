@@ -23,7 +23,7 @@ De acuerdo a los requerimientos no funcionales RNF2 y RNF3:
 
 # Caso de Uso
 
-## Software Quality testing on the e-SIM application based on ISO 9126
+## Software Quality testing on the e-SIM application based on ISO 9126 $^2$
 
 Se realizó sobre una aplicación de e-SIM basada en móviles utilizada por la Policía de Sidoarjo City Resort para facilitar la emisión y extensión de licencias de conducir para los ciudadanos indonesios. La aplicación no había sido probada previamente en cuanto a su calidad de software, por lo que el objetivo del estudio fue medir dicha calidad basándose en la norma ISO 9126 y proporcionar recomendaciones basadas en los resultados de las pruebas de calidad del software realizadas.
 
@@ -65,8 +65,36 @@ Los resultados son los siguientes
 
 ---
 
+#### Prueba de viabilidad
+
+La prueba de viabilidad se realiza para determinar si un sistema puede considerarse viable o no.  Los cálculos de la prueba de viabilidad se realizan utilizando fórmulas de prueba de viabilidad.
+
+$$
+P=\frac{(f)}{(n)}\times 100\% \\
+$$
+
+- P = Porcentaje de viabilidad
+- (f) = Puntuación actual
+- (n) = Puntación ideal
+
+<img src="Prueba_de_viabilidad_comparacion.png" width=300px>
+
+Los resultados por variable fueron lo siguientes:
+
+- Usabilidad: 72%
+- Eficiencia: 74%
+- Funcionalidad: 82%
+- Confiabilidad: 80%
+- Mantenibilidad: 87%
+- Portabilidad: 73%
+
+<img src="resultados_prueba_viablidad.png" width=600px>
+
+Promedio de los resultados de la prueba de viabilidad: 78%
+
 
 - $^1$ Calidad en la Industria del Software. La Norma ISO-9126 https://www.nacionmulticultural.unam.mx/empresasindigenas/docs/2094.pdf
 
+- $^2$ Alvian, F. A., Wibowo, A. T., Izzuddin, M. A., & Herman, H. (2020). SOFTWARE QUALITY TESTING ON THE E-SIM APPLICATION BASED ON ISO 9126. International Conference of Business and Social Sciences, 1(1). Retrieved from https://debian.stiesia.ac.id/index.php/icobuss1st/article/view/44
 
 
