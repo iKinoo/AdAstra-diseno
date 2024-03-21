@@ -9,7 +9,7 @@
 
 
 * [RNF.1 Requerimientos de usabilidad](https://github.com/iKinoo/AdAstra-diseno/tree/Russel) (Russel)
-* [RNF 2. Requerimiento de confiabilidad]() (Rodrigo)
+* [RNF 2. Requerimiento de confiabilidad](Tareas/InvestigacionRNF/Confiabilidad) (Rodrigo)
 * [RNF 3. Requerimiento de Seguridad]() (Isaías)
 * [RNF. 4 Requerimiento de Flexibilidad]() (Mateo)
 
