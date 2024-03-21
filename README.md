@@ -11,3 +11,12 @@
 
 ## Tareas del equipo:
 [Aquí](https://github.com/iKinoo/AdAstra-diseno/tree/main/Tareas)
+
+# Modelo de calidad, Investigación y verificación del atributo de calidad:
+
+
+* [RNF.1 Requerimientos de usabilidad](https://github.com/iKinoo/AdAstra-diseno/tree/Russel) (Russel)
+* [RNF 2. Requerimiento de confiabilidad](Tareas/InvestigacionRNF/Confiabilidad) (Rodrigo)
+* [RNF 3. Requerimiento de Seguridad]() (Isaías)
+* [RNF. 4 Requerimiento de Flexibilidad]() (Mateo)
+
