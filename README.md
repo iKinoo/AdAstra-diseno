@@ -25,21 +25,20 @@ Mide el grado en que el software es fácil de usar, qué tan intuitivo es, el ma
 |--------|-----------|-------------|
 | RNF.1 | Requerimientos de usabilidad | |
 | RNF.1.1 |Comprensibilidad | La aplicación debe proporcionar un entorno de aprendizaje que los usuarios puedan entender fácilmente, permitiéndoles comprender cómo usarla para aprender y desarrollar habilidades blandas desde el primer contacto. |
-| RNF.1.2 | Debe ser fácil para los usuarios aprender a utilizar la aplicación, incluyendo la navegación por el contenido del curso, la participación en actividades de aprendizaje y la comprensión de cómo se evalúan sus habilidades blandas. |
-| RNF.1.3 | Atractivo | RNF.1.3 Atractivo: La aplicación debe ser visual y funcionalmente atractiva( funcionalmente atractiva:= satisface las necesidades y expectativas de los usuarios de manera eficiente, haciendo que su experiencia sea no solo placentera desde el punto de vista estético sino también satisfactoria) para los usuarios, incentivando su uso continuado y compromiso con el contenido de aprendizaje.
- |
+| RNF.1.2 | Aprendibilidad | Debe ser fácil para los usuarios aprender a utilizar la aplicación, incluyendo la navegación por el contenido del curso, la participación en actividades de aprendizaje y la comprensión de cómo se evalúan sus habilidades blandas. |
+| RNF.1.3 | Atractivo | RNF.1.3 Atractivo: La aplicación debe ser visual y funcionalmente atractiva( funcionalmente atractiva:= satisface las necesidades y expectativas de los usuarios de manera eficiente, haciendo que su experiencia sea no solo placentera desde el punto de vista estético sino también satisfactoria) para los usuarios, incentivando su uso continuado y compromiso con el contenido de aprendizaje.|
 
 ## Investigación de un caso real de usabilidad y diapositiva de mi caso particular:
 
-* [Investigación aquí]() (Russel) (pueden revisar mi ejemplo)
-* [Diapositiva aquí]() (Russel) (pueden revisar mi ejemplo)
+* [Investigación aquí](https://github.com/iKinoo/AdAstra-diseno/blob/Russel/Tareas/InvestigacionRNF/UsabilidadInvestigacion.pdf) 
+* [Diapositiva aquí](https://github.com/iKinoo/AdAstra-diseno/blob/Russel/Tareas/InvestigacionRNF/UsabilidadPresentacioAdAstra.pdf) 
 
 
 Partiendo de la investigación realizada, para validar los RNF. asociados a la Usabilidad usaremos las siguientes herramientas:
 
-**Encuestas de satisfacción**, con  estas puedo medir el nivel de atractivo visual así como el atractivo funcional percibido por el usuario,es decir, podré validar el RNF 1.3.
+* **Encuestas de satisfacción**, con  estas puedo medir el nivel de atractivo visual así como el atractivo funcional percibido por el usuario,es decir, podré validar el RNF 1.3.
 
-**Análisis de actividades**, esto me permitirá validar el RNF 1.1 y 1.2, cabe mencionar que éste análisis de actividades lo debo hacer proporcionando tareas específicas y bien definidas para completar, teniendo en cuenta:
+* **Análisis de actividades**, esto me permitirá validar el RNF 1.1 y 1.2, cabe mencionar que éste análisis de actividades lo debo hacer proporcionando tareas específicas y bien definidas para completar, teniendo en cuenta:
 Definición de los objetivos y el propósito de la prueba.
 Parámetros de los participantes como criterios de inclusión y exclusión.
 Rol(es) especificado(s) del usuario, por ejemplo, la herramienta de aprendizaje electrónico es utilizada por profesores o estudiantes, usuarios principiantes o expertos.
