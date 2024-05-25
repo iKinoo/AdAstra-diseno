@@ -38,5 +38,6 @@ Es posible que Visual Studio Code no detecte las librerías, en ese caso necesit
 
 #### Run, Build, Debug...
 
-Ahora puedes ejecutar *tasks* de Gradle, ya sea por terminal, ejecutando `./gradlew <task>` o por la extensión Gradle For Java que te permite debugear, ver todas las tareas, entre otras cosas.
+Ahora puedes ejecutar *tasks* de Gradle, ya sea por terminal, ejecutando `./gradlew <task>` (ejem. `./gradlew run`) o por la extensión Gradle For Java que te permite debugear, ver todas las tareas, entre otras cosas.
 
+![alt](assets/gradle-projects-extension.png)
