@@ -11,7 +11,8 @@
 
 ## Definición
 
->Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilidad como:
+Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilidad como:
+
 >Capacidad del producto para adaptarse a cambios en sus requisitos, contextos de uso o entorno del sistema. Esta característica se subdivide a su vez en las siguientes subcaracterísticas:
 >
 >- **Adaptabilidad**. Capacidad del producto que le permite ser adaptado de forma efectiva y eficiente a diferentes entornos determinados de hardware, software, operacionales o de uso.
@@ -19,9 +20,19 @@
 >- **Instalabilidad**. Facilidad con la que el producto se puede instalar y/o desinstalar de forma exitosa en un determinado entorno.
 >- **Reemplazabilidad**. Capacidad del producto para ser utilizado en lugar de otro producto software determinado con el mismo propósito y en el mismo entorno.
 
-## Contextualización a nuestro trabajo
+## Contextualización
 
-En el contexto de nuestro sistema es importante ya que hay que preparar al sistema para una posible demanda de usuarios y la creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema. Además, es deseable que el sistema pueda ser exportado para distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
+En el contexto de nuestro sistema, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y la creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema. Además, es deseable que el sistema pueda ser exportado para distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
+
+De acuerdo a los requerimientos no funcionales RNF3:
+
+| Código | Descripción |
+|--------|-------------|
+| **RNF3.1** | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
+| **RNF3.2** | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
+| **RNF3.3** | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
+| **RNF3.4** | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
+| **RNR3.5** | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
 
 ## Funcionalidades en diagramas, donde veamos que cumple el rnf
 
