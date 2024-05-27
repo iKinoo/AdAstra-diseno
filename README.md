@@ -128,9 +128,6 @@ Finalmente, la facilidad para cambiar de estrategia durante la ejecución del pr
 
 <details>
 
-## RNF elegidos y justificación:
-
-
 
 # Flexibilidad
 
