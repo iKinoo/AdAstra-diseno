@@ -31,10 +31,7 @@
 | RNF2.4|El sistema debe ser capaz de reconocer el progreso del usuario en la mayoría de las ocasiones. Se espera que las fallas en el reconocimiento del progreso sean extremadamente raras y se deben evitar en la medida de lo posible. |
 | **RNF3** | **Flexibilidad** |
 | RNF3.1 | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
-| RNF3.2 | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
 | RNF3.3 | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
-| RNF3.4 | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
-| RNR3.5 | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
 | **RNF4** | **Requerimiento de seguridad** |
 | RNF4.1 | El usuario solo podrá acceder a su avance, contenido y actividades accediendo con su usuario y contraseña. |
 | RNF4.2 | La cuenta del usuario se mantendrá abierta en el dispositivo y sólo se cerrará cuando el usuario la cierre manualmente |
