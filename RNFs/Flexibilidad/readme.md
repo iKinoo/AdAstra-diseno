@@ -43,15 +43,24 @@ Mapeando los requerimientos de flexibilidad con los requerimientos funcionales:
     - **RF4**: Publicar la lista de soft skills y actividades requiere fácil actualización y adición.
     - **RF5**: Actividades interactivas deben ser fácilmente agregables para mantener el sistema actualizado.
 
-    [![alt](./base.svg)](./base.svg)
 
 1. **RNF3.2** (CRUD en un curso, pilar o actividad sin afectar otros):
    - **RF1**: Guardar cursos en la nube debe permitir modificaciones sin afectar la estructura global.
    - **RF4**: Publicar listas de soft skills y actividades debe permitir actualizaciones sin afectar el sistema.
    - **RF8**: Acceso a contenido completado debe ser independiente de las modificaciones en otros cursos.
 
-    
-## Ejemplo
+Partimos de un diagrama inicial del sistema para trabajar con los requerimientos no funcionales de flexibilidad:
+
+[![alt](/Assets/AdAstra_ActividaesUML.png)](/Assets/AdAstra_ActividaesUML.png)
+
+A continuación, se presentan los diagramas de actividades y de clases que se utilizaron para mapear los requerimientos no funcionales con los funcionales:
+
+**RNF3.1:**
+[![alt](./base.svg)](./base.svg)
+
+**RNF3.2:**
+
+[![alt](/Assets/umlDecoratorAdAstra.png)](/Assets/umlDecoratorAdAstra.png)
 
 ## Bibliografía
 

@@ -21,7 +21,7 @@
 * [RNF.1 Requerimientos de usabilidad](Tareas/InvestigacionRNF/Usabilidad) (Russel)
 * [RNF 2. Requerimiento de confiabilidad](Tareas/InvestigacionRNF/Confiabilidad) (Isaías y Rodrigo)
 * [RNF 3. Requerimiento de Seguridad](Tareas/InvestigacionRNF/Seguridad) (Isaías)
-* [RNF. 4 Requerimiento de Flexibilidad](Tareas/InvestigacionRNF/Flexibilidad) (Mateo y Russel)
+* [RNF. 4 Requerimiento de Flexibilidad](RNFs/Flexibilidad/) (Mateo y Russel)
 
 ### Requerimientos No Funcionales elegidos y su justificación:
 
