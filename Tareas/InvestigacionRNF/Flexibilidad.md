@@ -22,19 +22,23 @@ Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilid
 
 ## Contextualización
 
-En el contexto de nuestro sistema, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y la creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema. Además, es deseable que el sistema pueda ser exportado para distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
+En Ad-Astra, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y una creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema.
+
+Además, es deseable que el sistema pueda ser exportado a distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
 
 De acuerdo a los requerimientos no funcionales RNF3:
 
-| Código | Descripción |
-|--------|-------------|
-| **RNF3.1** | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
-| **RNF3.2** | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
-| **RNF3.3** | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
-| **RNF3.4** | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
-| **RNR3.5** | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
+| Código | Categoría |Descripción |
+|--------|-----------|-------------|
+| **RNF3.1** | Escalabilidad | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
+| **RNF3.2** | Escalabilidad | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
+| **RNF3.3** | Escalabilidad | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
+| **RNF3.4** | Instalabilidad | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
+| **RNR3.5** | Escalabilidad | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
 
 ## Funcionalidades en diagramas, donde veamos que cumple el rnf
+
+<!-- Posiblemente: Mapeando los requerimientos no funcionales a funcionalidades del sistema, podemos ver que la escalabilidad se puede lograr con un diseño modular y una arquitectura de microservicios. La instalabilidad se puede lograr con una arquitectura de contenedores y una base de datos que permita fácilmente la migración de un sistema a otro. -->
 
 ## Ejemplo
 
