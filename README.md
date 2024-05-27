@@ -14,15 +14,21 @@
 ## Tareas del equipo:
 [Aquí](https://github.com/iKinoo/AdAstra-diseno/tree/main/Tareas)
 
-# Modelo de calidad, Investigación y verificación del atributo de calidad:
+
+## Investigación previa de atributos de calidad:
+
 
 * [RNF.1 Requerimientos de usabilidad](Tareas/InvestigacionRNF/Usabilidad) (Russel)
 * [RNF 2. Requerimiento de confiabilidad](Tareas/InvestigacionRNF/Confiabilidad) (Isaías y Rodrigo)
 * [RNF 3. Requerimiento de Seguridad](Tareas/InvestigacionRNF/Seguridad) (Isaías)
 * [RNF. 4 Requerimiento de Flexibilidad](Tareas/InvestigacionRNF/Flexibilidad) (Mateo y Russel)
 
+### Requerimientos No Funcionales elegidos y su justificación:
 
-### Requerimiento de Reusabilidad
+Después de hacer la investigación y gracias a los aprendizajes obtenidos durante el curso, hemos decidido que los **Requerimientos No Funcionales** con los que trabajaremos serán **Flexibilidad** y **Mantenibilidad** debido a que son más relevantes para AdAstra actualmente y es más viable hacer la comprobación en la etapa de diseño
+
+
+### Requerimiento de Mantenibilidad (Reusabilidad)
 [Documento de Reusabilidad](RNFs/Reusabilidad/Reusabilidad.md) 
 
 <details>
@@ -121,47 +127,73 @@ Finalmente, la facilidad para cambiar de estrategia durante la ejecución del pr
 [Documento de Flexibilidad](RNFs/Flexibilidad/Flexibilidad.md)
 
 <details>
-<summary><i>expandir o colapsar</i></summary>
+
 
 # Flexibilidad
-
-+—-------------------------------+
-|           RNF1:Name            |
-+—-------------------------------+
-
-- ISO/definición
-- Contextualización a nuestro trabajo:
-- Funcionalidades en diagramas, donde veamos que cumple el rnf:
-- ejemplo: Crear un nuevo curso (diagrama donde se refleje la funcionalidad y podemos solucionar con un patrón de diseño como factory), un plus sería cómo se encuentra sin y con un patrón de diseño, pero ahorita hay que concentrarse en lo indispensable
 
 ## Definición
 
 Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilidad como:
 
->Capacidad del producto para adaptarse a cambios en sus requisitos, contextos de uso o entorno del sistema. Esta característica se subdivide a su vez en las siguientes subcaracterísticas:
->
->- **Adaptabilidad**. Capacidad del producto que le permite ser adaptado de forma efectiva y eficiente a diferentes entornos determinados de hardware, software, operacionales o de uso.
->- **Escalabilidad**. Capacidad del producto para gestionar cargas de trabajo crecientes o decrecientes y para adaptar su capacidad a la variabilidad.
->- **Instalabilidad**. Facilidad con la que el producto se puede instalar y/o desinstalar de forma exitosa en un determinado entorno.
->- **Reemplazabilidad**. Capacidad del producto para ser utilizado en lugar de otro producto software determinado con el mismo propósito y en el mismo entorno.
+>Capacidad del producto para adaptarse a cambios en sus requisitos, contextos de uso o entorno del sistema.
 
 ## Contextualización
 
-En el contexto de nuestro sistema, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y la creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema. Además, es deseable que el sistema pueda ser exportado para distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
+En AdAstra es fundamental la flexibilidad debido a que el sistema aún está en una etapa temprana y está sujeto al cambio en la forma de los cursos y actividades, estos pueden ser presentados como videos, texto, o incluso minijuegos, y dependiendo de los resultados pueden evolucionar los requerimientos y/o necesidades del sistema, es por eso que tenemos los siguientes RNF:
 
-De acuerdo a los requerimientos no funcionales RNF3:
-
-| Código | Descripción |
+| Código |Descripción |
 |--------|-------------|
-| **RNF3.1** | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
-| **RNF3.2** | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
-| **RNF3.3** | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
-| **RNF3.4** | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
-| **RNR3.5** | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
+| *RNF4.1* | Se podrán agregar nuevos cursos, pilares y actividades al sistema fácilmente. () |
+| *RNF4.2* | Se podrá realizar un CRUD de cualquier curso, pilar o actividad sin afectar de alguna forma a los ya existentes y/o la estructura del sistema. |
+|*RNF4.3*| *RNF3.3* Se podrán crear actividades de distintos tipos  facilmente sin afectar a las actividades existentes o al sistema
 
-## Funcionalidades en diagramas, donde veamos que cumple el rnf
+## Funcionalidades en diagramas, donde veamos que cumplen los rnf
 
-## Ejemplo
+1. *RNF3.1* (Agregar nuevos cursos, pilares y actividades fácilmente):
+
+1. *RNF3.2* (CRUD en un curso, pilar o actividad sin afectar otros):
+  
+### Solución:
+En este diagrama se observa un sistema de gestión de cursos con clases para AdminPanel, Curso, Pilar y Actividad. Las relaciones y métodos definidos permiten agregar y gestionar estos elementos de manera modular.
+
+RNF4.1
+Se pueden agregar nuevos cursos, pilares y actividades fácilmente:
+
+AdminPanel puede agregar cursos con agregarCurso(curso: Curso).
+Curso puede agregar pilares con agregarPilar(pilar: Pilar).
+Pilar puede agregar actividades con agregarActividad(actividad: Actividad).
+RNF4.2
+Las operaciones CRUD en un curso, pilar o actividad no afectan a otros:
+
+<!--Diagrama uml de mateo-->
+![UML patrones](Assets/AdminPanel_UML.png)
+
+ 
+---
+*RNF4.3* Se podrán crear actividades de distintos tipos  facilmente sin afectar a las actividades existentes o al sistema
+
+### Solución 1
+En este primer diagrama podemos observar la clase Actividad, al heredar de dicha clase se pueden crear distintos tipos de actividades, ya sean actividades teóricas, actividades prácticas, actividades de evaluación, etc. Al mismo tiempo se pueden crear diferentes tipos de evaluación por medio de la herencia, que se seguirán comportando como una Actividad dentro del programa, por lo que cumplimos con el RNF3.3, es decir, podremos crear actividades de distintos tipos  facilmente sin afectar a las actividades existentes o al sistema, sin embargo hay un pequeño problema con esto...
+<!--mi diagrama con herencia...-->
+<img src="Assets/AdAstra_ActividaesUML.png" alt="UML sin patrones" />
+
+A largo plazo, podremos tener nuevos tipos de Actividades, o combinación de los tipos de actividades ya existentes, por ejemplo una actividad que sea una combinación entre Evaluación o práctica, o una Actividad que se comporte como teoría y práctica al mismo tiempo, y mientras más actividades existan tenndremos que recurrir a un árbol de herencia gigantesco que sí cumplirá con el requerimiento, pero de manera ineficiente, es por eso que tenemos la siguiente solución:
+
+### Solución 2
+
+Esta solución incluye el Patrón de diseño decorador, en el diagrama representamos una estructura que utiliza el patrón Decorator para añadir diferentes tipos de actividades sin modificar la estructura base.
+* La clase abstracta ActividadDecorator permite añadir funcionalidades adicionales a las actividades.
+* Cada decorador específico (Texto, Imagen, JsPlugin, Video, Formulario) extiende ActividadDecorator y añade su propia lógica al método cargarActividad().
+* Los decoradores pueden ser combinados para añadir múltiples funcionalidades a una misma actividad.
+
+De esta también cumplimos con el RNF3.3, es decir, podremos crear actividades de distintos tipos  facilmente sin afectar a las actividades existentes o al sistema, y al mismo tiempo a largo plazo nos permitirá crear diferentes tipos de actividades sin tener una estructura muy compleja y difícil de entender.
+
+<!--mi Diagrama uml con el patron de diseño que está en uml.pu (es plant uml)-->
+
+![UML patrones](Assets/umlDecoratorAdAstra.png)
+
+
+</details>
 
 ## Bibliografía
 
@@ -169,5 +201,3 @@ ISO 25010. (s. f.). <https://iso25000.com/index.php/en/iso-25000-standards/iso-2
 
 Gutierrez, O. O., Salgado, R. S., Díaz, O. G. F., & Pérez, J. R. (2019). Métricas para la Medición del Factor de Flexibilidad y el Factor de Herencia de Implementación de Sistemas de Software. Dialnet. <https://dialnet.unirioja.es/servlet/articulo?codigo=7425388>
 
-
-</details>
