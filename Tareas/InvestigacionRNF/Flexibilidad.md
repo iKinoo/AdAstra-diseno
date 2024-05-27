@@ -24,6 +24,10 @@ De acuerdo a los requerimientos no funcionales RNF3:
 | **RNF3.1** | Escalabilidad | Se podrán agregar nuevos cursos, pilares y actividades al sistema fácilmente. |
 | **RNF3.2** | Escalabilidad | Se podrá realizar un CRUD de cualquier curso, pilar o actividad sin afectar de alguna forma a los ya existentes y/o la estructura del sistema. |
 
+<!-- Posiblemente: Mapeando los requerimientos no funcionales a funcionalidades del sistema, podemos ver que la escalabilidad se puede lograr con un diseño modular y una arquitectura de microservicios. La instalabilidad se puede lograr con una arquitectura de contenedores y una base de datos que permita fácilmente la migración de un sistema a otro. -->
+
+## Presencia de la flexibilidad en el sistema
+
 Mapeando los requerimientos de flexibilidad con los requerimientos funcionales:
 
 | RNF / RF | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 | RF11 |
@@ -39,19 +43,14 @@ Mapeando los requerimientos de flexibilidad con los requerimientos funcionales:
     - **RF4**: Publicar la lista de soft skills y actividades requiere fácil actualización y adición.
     - **RF5**: Actividades interactivas deben ser fácilmente agregables para mantener el sistema actualizado.
 
+    [![alt](./base.svg)](./base.svg)
+
 1. **RNF3.2** (CRUD en un curso, pilar o actividad sin afectar otros):
    - **RF1**: Guardar cursos en la nube debe permitir modificaciones sin afectar la estructura global.
    - **RF4**: Publicar listas de soft skills y actividades debe permitir actualizaciones sin afectar el sistema.
    - **RF8**: Acceso a contenido completado debe ser independiente de las modificaciones en otros cursos.
 
-<!-- Posiblemente: Mapeando los requerimientos no funcionales a funcionalidades del sistema, podemos ver que la escalabilidad se puede lograr con un diseño modular y una arquitectura de microservicios. La instalabilidad se puede lograr con una arquitectura de contenedores y una base de datos que permita fácilmente la migración de un sistema a otro. -->
-
-## Funcionalidades en diagramas, donde veamos que cumple el rnf
-
-<!-- ## Diseño de la solución
-
-Para cumplir con los requerimientos de flexibilidad, se propone una arquitectura de microservicios que permita la escalabilidad y adaptabilidad del sistema. Cada funcionalidad del sistema se dividirá en módulos independientes que se comunicarán entre sí a través de una API REST. -->
-
+    
 ## Ejemplo
 
 ## Bibliografía
