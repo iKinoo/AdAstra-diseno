@@ -1,14 +1,5 @@
 # Flexibilidad
 
-+—-------------------------------+
-|           RNF1:Name            |
-+—-------------------------------+
-
-- ISO/definición
-- Contextualización a nuestro trabajo:
-- Funcionalidades en diagramas, donde veamos que cumple el rnf:
-- ejemplo: Crear un nuevo curso (diagrama donde se refleje la funcionalidad y podemos solucionar con un patrón de diseño como factory), un plus sería cómo se encuentra sin y con un patrón de diseño, pero ahorita hay que concentrarse en lo indispensable
-
 ## Definición
 
 Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilidad como:
@@ -22,20 +13,44 @@ Siguiendo la definición de la ISO/IEC-25010 definimos el atributo de flexibilid
 
 ## Contextualización
 
-En el contexto de nuestro sistema, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y la creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema. Además, es deseable que el sistema pueda ser exportado para distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
+En Ad-Astra, la flexibilidad es importante, ya que hay que preparar al sistema para un posible aumento en la demanda de usuarios y una creciente cantidad de cursos a futuro sin tener que modificar gran parte del sistema.
+
+Además, es deseable que el sistema pueda ser exportado a distintos sistemas operativos con una sola arquitectura. Por último, es deseable que las piezas del sistema sean lo más modular posible para, si se requiere en un futuro, migrar a microservicios de forma fácil, sin tener que rediseñar gran parte del diseño.
 
 De acuerdo a los requerimientos no funcionales RNF3:
 
-| Código | Descripción |
-|--------|-------------|
-| **RNF3.1** | Se podrán agregar nuevos cursos y actividades al sistema fácilmente. |
-| **RNF3.2** | Se priorizará que la comunicación entre los módulos del sistema sea mínima, alta cohesión y bajo acoplamiento. (ASP net lo maneja) |
-| **RNF3.3** | Se podrá modificar un curso en específico sin afectar de alguna forma a los ya existentes y/o a la estructura del sistema. |
-| **RNF3.4** | El sistema permitirá adaptarse a cualquier base de datos haciendo mínimas modificaciones a la estructura del sistema. |
-| **RNR3.5** | El sistema permitirá adaptarse a la creciente cantidad de usuarios haciendo mínimas modificaciones al mismo. |
+| Código | Categoría |Descripción |
+|--------|-----------|-------------|
+| **RNF3.1** | Escalabilidad | Se podrán agregar nuevos cursos, pilares y actividades al sistema fácilmente. |
+| **RNF3.2** | Escalabilidad | Se podrá realizar un CRUD de cualquier curso, pilar o actividad sin afectar de alguna forma a los ya existentes y/o la estructura del sistema. |
 
-## Funcionalidades en diagramas, donde veamos que cumple el rnf
+<!-- Posiblemente: Mapeando los requerimientos no funcionales a funcionalidades del sistema, podemos ver que la escalabilidad se puede lograr con un diseño modular y una arquitectura de microservicios. La instalabilidad se puede lograr con una arquitectura de contenedores y una base de datos que permita fácilmente la migración de un sistema a otro. -->
 
+## Presencia de la flexibilidad en el sistema
+
+Mapeando los requerimientos de flexibilidad con los requerimientos funcionales:
+
+| RNF / RF | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 | RF8 | RF9 | RF10 | RF11 |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|------|
+| **RNF3.1** | **X** | | **X** | **X** | **X** | | | | | | |
+| **RNF3.2** | **X** | | | **X** | | | | **X** | | | |
+
+### Justificación del mapeo
+
+1. **RNF3.1** (Agregar nuevos cursos, pilares y actividades fácilmente):
+    - **RF1**: Guardar cursos en la nube requiere flexibilidad para agregar nuevos cursos.
+    - **RF3**: Categorizar contenido de nuevas soft skills implica agregar actividades y cursos relacionados.
+    - **RF4**: Publicar la lista de soft skills y actividades requiere fácil actualización y adición.
+    - **RF5**: Actividades interactivas deben ser fácilmente agregables para mantener el sistema actualizado.
+
+    [![alt](./base.svg)](./base.svg)
+
+1. **RNF3.2** (CRUD en un curso, pilar o actividad sin afectar otros):
+   - **RF1**: Guardar cursos en la nube debe permitir modificaciones sin afectar la estructura global.
+   - **RF4**: Publicar listas de soft skills y actividades debe permitir actualizaciones sin afectar el sistema.
+   - **RF8**: Acceso a contenido completado debe ser independiente de las modificaciones en otros cursos.
+
+    
 ## Ejemplo
 
 ## Bibliografía
